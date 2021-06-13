@@ -68,7 +68,7 @@ const ExamInfo = () => {
       <div className="exam-info content">
         {/* replace with utility method */}
         <p className="text-center">
-          Hello{" "}
+          `Hello `
           <span className="username">
             <strong>{getUserInfo() ? getUserInfo().name : ""}</strong>
           </span>
