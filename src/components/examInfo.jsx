@@ -81,11 +81,11 @@ const ExamInfo = () => {
         <ol>
           <li>This exam contains multiple choice questions</li>
           <li>Some questions may have <strong>multiple answers</strong> (from the choices given)</li>
-          <li>Each question has <strong>score = 1</strong> for correct and{" "}<strong>0</strong> for incorrect</li>
+          <li>Each question has <strong>score = 1</strong> for correct and <strong>0</strong> for incorrect</li>
           <li>There is no negative marking</li>
           <li>Questions will be according to the skill level chosen by you</li>
           <li>This exam will contain all the questions according to your chosen skill level </li>
-          <li>Total time for the exam is{" "} <strong>{getConfigTime()} minutes</strong> </li>
+          <li>Total time for the exam is <strong>{getConfigTime()} minutes</strong> </li>
         </ol>
 
         <br />
@@ -102,7 +102,7 @@ const ExamInfo = () => {
                 Not seen: <span className="grey-color box"></span>
               </li>
               <li>
-                Seen but not attempted:{" "}
+                Seen but not attempted:
                 <span className="yellow-color box"></span>
               </li>
               <li>
@@ -117,7 +117,7 @@ const ExamInfo = () => {
         </ul>
         <br />
         <p>
-          <strong>Note: </strong>Once the exam is started you{" "}
+          <strong>Note: </strong>Once the exam is started you
           <strong>
             should not close the tab or refresh the page, or it will start again
           </strong>

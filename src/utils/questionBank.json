@@ -2,64 +2,64 @@
     "questions": [
         {
             "id": 1,
-            "title": "Question 1",
-            "choices": ["one", "two", "three"],
+            "title": "Who amongst the following had called Rabindranath Tagore as THE GREAT SENTINEL ?",
+            "choices": ["Mahatma Gandhi", "Abul Kalam Azad", "Dr. Rajendra Prasad","Subhash Chandra Bose"],
             "multipleAns": false,
             "level": [1],
             "answer": [0]
         },
         {
             "id": 2,
-            "title": "Question 2",
-            "choices": ["one", "two"],
+            "title": "Skin is the human body's largest organ ?",
+            "choices": ["False", "True"],
             "multipleAns": false,
             "level": [1,2],
             "answer": [1]
         },
         {
             "id": 3,
-            "title": "Question 3",
-            "choices": ["one", "two", "three", "four"],
+            "title": "Apart from U.K. where else London exists?",
+            "choices": ["India", "USA", "Canada", "China"],
             "multipleAns": true,
             "level": [2,3],
             "answer": [1,2]
         },
         {
             "id": 4,
-            "title": "Question 4",
-            "choices": ["one", "two"],
+            "title": "Magma is the scientific name for lava ?",
+            "choices": ["False", "True"],
             "multipleAns": false,
             "level": [1],
             "answer": [0]
         },
         {
             "id": 5,
-            "title": "Question 5",
-            "choices": ["one", "two"],
+            "title": "Drinking warm milk induces sleep?",
+            "choices": ["False", "True"],
             "multipleAns": false,
             "level": [1,2,3],
             "answer": [1]
         },
         {
             "id": 6,
-            "title": "Question 6",
-            "choices": ["one", "two", "three", "four"],
+            "title": "What gases can be filled in balloons?",
+            "choices": ["Helium", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
             "multipleAns": true,
             "level": [2,3],
             "answer": [0,3]
         },
         {
             "id": 7,
-            "title": "Question 6",
-            "choices": ["one", "two", "three"],
+            "title": "Each year World Red Cross and Red Crescent Day is celebrated on?",
+            "choices": ["June 8", "May 8", "July 8"],
             "multipleAns": false,
             "level": [3],
             "answer": [1]
         },
         {
             "id": 8,
-            "title": "Question 6",
-            "choices": ["one", "two", "three", "four"],
+            "title": "Who of these people have walked on Moon?",
+            "choices": ["Alan Bean", "Kalpana Chawla", "Sunita Williams", "Edwin Buzz Aldrin"],
             "multipleAns": true,
             "level": [1,2,3],
             "answer": [0,3]

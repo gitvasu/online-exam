@@ -1,24 +1,27 @@
 import { AnswerStatus } from "../constantValues";
 
-const json = require("./questionBank.json");
+const json = require("./questionBank.json"); 
 
-//--------------------------------------------------------------------------------
-/* getAllQuestions function's purpose is to "Filter()" from the json object i.e.,
+/**
+ * getAllQuestions function's purpose is to "Filter()" from the json object i.e.,
    "questions"(imported from ./questionBank.json file using require() func.) in 
-   order to "find()" the questions whose "level" is 1 in the questions object.*/ 
+   order to "find()" the questions whose "level" is 1 in the questions object.
+ *
+ * @returns {String} Returns the value of ques for which the value of level = 1.
+ */
 export function getAllQuestions(level) {
   if (!level) 
-  return json["questions"];
+  { return json["questions"]; }
 
-  var ques = json["questions"].filter((ques) =>
-    ques.level.find((l) => l === parseInt(level))
-  );
+  var ques = json["questions"].filter((ques) => ques.level.find((l) => l === parseInt(level)));
 
   return ques;
 }
 
-//---------------------------------------------------------------------------------
-//Function to check whether the question has been answered or not
+
+/** It checks whether the question has been answered or not
+ *  @returns {Number} Returns the value of ansCount
+ */
 function isQuestionAnswered(ques) {
   let ansCount = 0;
 
@@ -30,8 +33,10 @@ function isQuestionAnswered(ques) {
   return ansCount;
 }
 
-//--------------------------------------------------------------------------------
-//Counter to know that the ques has been Attempted by checking the above func.
+
+/**Counter to know that the ques has been Attempted by checking the above func.
+ * @returns {Number} Returns the value of quesAttempt for a way to check if the ques. attempted by the user
+ */
 export function getAttemptCount(quesList) {
   let quesAttempt = 0;
   quesList.forEach(
@@ -44,13 +49,15 @@ export function getAttemptCount(quesList) {
 }
 
 
-
-
-
-//---------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------
-/*Function for finally getting and storing the answer choices in the array yourAns,
- answered by the user and by matching them with the realAns array with the actual real answers*/
+/**For finally getting and storing the answer choices in the array yourAns,
+   answered by the user and by matching them with the realAns array with the actual real answers
+* @returns {Array, Array, Bool, Number, Number} Returns the values for 
+*    realAns,
+*    yourAns,
+*    isAnswered,
+*    status,
+*    score,
+*/
 export function getAnsweredChoices(answeredQues) {
   let realAns = [];
   let yourAns = [];
